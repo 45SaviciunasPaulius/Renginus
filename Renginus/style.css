@@ -1,0 +1,192 @@
+ 
+
+body {
+    height: 100%;
+    background-image: url("images/background.jpg");
+background-size: 100vw 100vh;
+    z-index: 3;
+    overflow-x: hidden;
+
+    
+}
+
+#image-container{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    
+}
+
+@media only screen and (min-width: 960px) {
+    
+    #SearchContainer{
+        width: 50%;
+       }
+
+    #bg-images {
+        z-index: -1;
+        height: 100vh;
+        clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+        position: absolute;
+        left: -10px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+   #SearchContainer{
+    width: 100%;
+   }
+
+    #bg-images {
+        z-index: -1;
+        height: 100%;
+        position: absolute;
+        clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+        transform: translate(-40%);
+        left: -10px;
+    }
+}
+
+#dropdownMenuLink{
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.renginiu-foto-menu{
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+#image-preview-container>img{
+    object-fit:contain;
+    aspect-ratio: 16 / 9;
+    width: 250px; 
+}
+
+#picture_preview{
+    object-fit:contain;
+    aspect-ratio: 10/10;
+    width: 250px; 
+}
+
+#picture_preview:hover{
+     filter: brightness(0.5);
+}
+
+.renginiu-menu{
+    height: fit-content;
+}
+
+#NavFooterBG{
+    position: relative;
+    padding-top: 1px;
+}
+
+.picker {
+  display: inline;
+  border: 1px solid lightgray;
+  padding : 4px;
+}
+input {
+  border: 0;
+}
+
+#formFile{
+    display:none
+}
+
+#smallpfp{
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.renginiu-foto-menu:hover{
+    transform: scale(1.02);
+    filter: drop-shadow(5px 5px 4px #1414148f);
+}
+
+
+.slideshow-container {
+    z-index: 3;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev, .next {
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  #container-bg-img{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #bg-image{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    filter: blur(50px);
+    transform: scale(4);
+  }
+
+ #renginysIMG {
+  width: 100%;
+  display: block;
+
+  margin: auto;
+}
+
+#isimintiMygtukas{
+  position: absolute;
+  right:0;
+  color: white;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#isimintiMygtukas:hover{
+  cursor: pointer;
+  position: absolute;
+  right:0;
+  color: gold;
+  margin-right: 10px;
+  margin-top: 10px;
+  transform: scale(1.1);
+}
+
+
