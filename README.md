@@ -78,8 +78,3 @@ Main tables (relationships exist between these tables):
 5. Update `connect.php` with your database credentials (host, username, password, db name).
 6. Ensure API keys (e.g., Google Maps) are configured where applicable.
 7. Open the site in a browser (e.g., `http://localhost/<project-folder>/index.php`) and register/login.
-
-## Usage
-- Regular users can browse events, search and filter, register for events, save/bookmark events, and edit their profile.
-- Administrators can approve or reject event submissions, manage users and roles, and oversee event listings.
-
